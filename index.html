@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>xat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cambia el fondo desde la variable --background-image en style.css -->
+  <main class="scene">
+    <div class="snow-layer" aria-hidden="true"></div>
+<section class="profile-layout">
+<section class="center-column">
+        <div class="xat-frame" id="xatFrame">
+          <div class="frame-top">
+            <span class="frame-title">✦ RINCÓN MUSICAL AMIGOS ✦</span>
+            <button class="tab-button radio-tab" id="radioToggle" type="button"
+              aria-label="Reproducir radio" aria-pressed="false">
+            <span class="radio-note-icon">♫</span>
+            <span class="radio-now-playing">
+              <strong id="radioTrack">RINCONMUSICALAMIGOS RADIO</strong>
+              <small id="radioArtist">Pulsa para escuchar</small>
+            </span>
+          </button>
+          </div>
+          <audio id="radioAudio" preload="none"></audio>
+<div class="xat-content">
+            <!-- Sustituye el valor de data-xat-embed por tu iframe/código de xat.com.
+                 Si xat.com te entrega un iframe, pégalo dentro de este contenedor. -->
+            <div class="xat-placeholder" id="xatPlaceholder">
+              <div class="chat-symbol"></div>
+              <code><iframe src="https://xat.com/embed/chat.php#id=220269436&gn=RINCONMUSICALAMIGOS" allow="clipboard-write" width="728" height="500" frameborder="0" scrolling="no"></iframe><br></code>
+            </div>
+            <div class="xat-embed" id="xatEmbed">
+              <br>
+            </div>
+          </div>
+          <div class="frame-footer">
+                    </div>
+        </div>
+
+        <div class="rules-bar" aria-label="Reglas de la sala">
+          <span class="rules-label">REGLAS</span>
+          <div class="marquee-window">
+            <div class="marquee-track">
+              <span>Respeta a todos los usuarios</span><b>✦</b>
+              <span>No spam ni flood</span><b>✦</b>
+              <span>Prohibido insultar o molestar</span><b>✦</b>              
+              <span>Respeta a todos los Dj y Cantantes</span><b>✦</b>
+              <span>No Pidas Rango</span><b>✦</b>
+              <span>No se Admite Clones en Sala</span><b>✦</b>
+              <span>Nos Reservamos el derecho de Admisión</span><b>✦</b>
+            </div>
+          </div>
+        </div>
+      </section>
+</section>
+
+   
+
+    <button class="snow-control" id="snowToggle" type="button" aria-pressed="false">
+      <span class="snow-icon">❄</span><span id="snowLabel">Pausar nieve</span>
+    </button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
